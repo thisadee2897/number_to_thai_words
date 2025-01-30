@@ -1,3 +1,5 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+- Initial release.
+- Added function to convert numbers to Thai words.
+- Supports integer and decimal numbers with "สตางค์".
