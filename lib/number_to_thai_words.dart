@@ -5,14 +5,15 @@ library number_to_thai_words;
 class NumberToThaiWords {
   static const List<String> _units = <String>['', 'หนึ่ง', 'สอง', 'สาม', 'สี่', 'ห้า', 'หก', 'เจ็ด', 'แปด', 'เก้า'];
   static const List<String> _scales = <String>['', 'สิบ', 'ร้อย', 'พัน', 'หมื่น', 'แสน', 'ล้าน'];
-/// Converts an integer number into its Thai word representation.
-///
-/// This method is a helper function used by the `convert` method to convert
-/// integer numbers into their corresponding Thai words. It handles scales like
-/// 'สิบ', 'ร้อย', 'พัน', etc., and formats the number accordingly.
-///
-/// - Parameter number: The integer number to be converted.
-/// - Returns: The Thai words representation of the number.
+
+  /// Converts an integer number into its Thai word representation.
+  ///
+  /// This method is a helper function used by the `convert` method to convert
+  /// integer numbers into their corresponding Thai words. It handles scales like
+  /// 'สิบ', 'ร้อย', 'พัน', etc., and formats the number accordingly.
+  ///
+  /// - Parameter number: The integer number to be converted.
+  /// - Returns: The Thai words representation of the number.
   static String _convertNumberToThaiWords(int number) {
     String words = '';
     int scaleIndex = 0;
@@ -64,7 +65,9 @@ class NumberToThaiWords {
 
     String bahtText = _convertNumberToThaiWords(baht);
     String satangText = _convertNumberToThaiWords(satang);
-
+    if (baht == 0 && satang == 0) {
+      return 'ศูนย์บาทถ้วน'; // กรณี 0.00 บาท
+    }
     String result = '$bahtTextบาท';
     if (satang > 0) {
       result += '$satangTextสตางค์';
