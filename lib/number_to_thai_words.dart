@@ -3,8 +3,27 @@ library number_to_thai_words;
 /// This class provides the functionality to convert numbers to Thai words.
 /// It includes a method to convert an integer into its Thai representation.
 class NumberToThaiWords {
-  static const List<String> _units = <String>['', 'หนึ่ง', 'สอง', 'สาม', 'สี่', 'ห้า', 'หก', 'เจ็ด', 'แปด', 'เก้า'];
-  static const List<String> _scales = <String>['', 'สิบ', 'ร้อย', 'พัน', 'หมื่น', 'แสน', 'ล้าน'];
+  static const List<String> _units = <String>[
+    '',
+    'หนึ่ง',
+    'สอง',
+    'สาม',
+    'สี่',
+    'ห้า',
+    'หก',
+    'เจ็ด',
+    'แปด',
+    'เก้า'
+  ];
+  static const List<String> _scales = <String>[
+    '',
+    'สิบ',
+    'ร้อย',
+    'พัน',
+    'หมื่น',
+    'แสน',
+    'ล้าน'
+  ];
 
   /// Converts an integer number into its Thai word representation.
   ///

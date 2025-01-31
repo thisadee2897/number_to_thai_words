@@ -1,9 +1,8 @@
 name: number_to_thai_words
 description: |
-  A Dart package that converts numeric values into their corresponding Thai word representation. 
-  Useful for generating invoices, reports, or other applications that require displaying numbers in Thai text format.
+  A Dart package that converts numeric values into their corresponding Thai word representation.
 
-version: 1.0.4
+version: 1.0.5
 homepage: https://github.com/thisadee2897/number_to_thai_words
 repository: https://github.com/thisadee2897/number_to_thai_words
 
